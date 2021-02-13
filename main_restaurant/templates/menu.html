@@ -1,10 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<!-- Restaurant Menu Section -->
+<section id="restaurant-menu">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Menu</h2>
+        </div>
+          {% for menu in menu %}
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="menu-section">
+                  <h2 class="menu-section-title">{{ menu }}</h2>
+                  <div class="menu-item">
+                    <div class="menu-item-name">Tortellini Skewers</div>
+                    <div class="menu-item-price"> $9 </div>
+                    <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu-item-name">Fried Ravioli</div>
+                    <div class="menu-item-price"> $7 </div>
+                    <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu-item-name">Wild Mushroom Arancini</div>
+                    <div class="menu-item-price"> $9 </div>
+                    <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu-item-name">Mozzarella Sticks</div>
+                    <div class="menu-item-price"> $10 </div>
+                    <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
+                  </div>
+                </div>
+              </div>
+          {% endfor %}
+        </div>
+      </div>
+</section>

@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+    {% include "features.html" %}
+    {% include "about.html" %}
+    {% include "menu.html" %}
+    {% include "gallery.html" %}
+    {% include "team.html" %}
+    {% include "contact.html" %}
+{% endblock %}
